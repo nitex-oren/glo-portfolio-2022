@@ -42,6 +42,10 @@ body {
     padding: 74px 0;
 }
 
+.header-photo {
+    max-width: 210px;
+}
+
 .header-text {
     margin-left: 27px;
 }
