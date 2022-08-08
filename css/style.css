@@ -1,5 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
 }
 
 .container {
@@ -95,6 +96,8 @@ body {
     border-bottom: 2px solid #BF7506;
     text-decoration: none;
     color: #211B12;
+    font-weight: 700;
+    line-height: 150%;
 }
 
 .cv-icon {
@@ -109,13 +112,10 @@ body {
 
 /* Portfolio */
 
-.portfolio {}
-
 .portfolio-header {
     font-weight: 700;
     font-size: 48px;
     line-height: 125%;
-    letter-spacing: -0.03em;
     color: #BF7506;
     margin: 0 0 32px 0;
 }
@@ -138,7 +138,6 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 135%;
-    letter-spacing: -0.02em;
     color: #BF7506;
 }
 
@@ -190,4 +189,139 @@ body {
 
 .card-button-icon {
     margin-right: 4px;
+}
+
+/*****************************/
+/*DEVELOPER*/
+.developer {
+    margin-top: 80px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.developer-photo {
+    border-radius: 20px;
+    outline: 1px solid #ccc;
+    width: 360px;
+    height: 440px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.developer-about {
+    margin-left: 55px;
+}
+
+.developer-hello {
+    font-size: 24px;
+    line-height: 135%;
+    color: #211B12;
+}
+
+.developer-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+    color: #BF7506;
+    margin: 4px 0 16px;
+
+}
+
+.developer-text {
+    font-size: 16px;
+    line-height: 150%;
+    color: #211B12;
+}
+
+.motto {
+    font-family: 'Helvetica', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #DD9C3C;
+    margin: 16px 0;
+}
+
+.developer-sign {
+    max-width: 200px;
+}
+
+.skills-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 135%;
+    color: #211B12;
+}
+
+.feedback {
+    padding: 80px 0 160px;
+}
+
+.input-group {
+    position: relative;
+    padding-top: 11px;
+
+}
+
+.input-label {
+    position: absolute;
+    top: 0;
+    left: 16px;
+
+    color: #83807C;
+    line-height: 150%;
+    font-size: 16px;
+    padding: 0 8px;
+    background: white;
+}
+
+.input {
+    border: 3px solid #E0DEDC;
+    border-radius: 4px;
+    width: 435px;
+    height: 56px;
+}
+
+.textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.form-container {
+    max-width: 435px;
+    margin: 0 auto;
+}
+
+.submit-button {
+    display: flex;
+
+    align-items: center;
+    /* padding: 7px 8px; */
+    border: none;
+    border-bottom: 2px solid #BF7506;
+    text-decoration: none;
+    color: #211B12;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 150%;
+
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+.footer {
+    font-family: 'Helvetica';
+    line-height: 150%;
+    text-align: center;
+    color: #83807C;
+    padding-bottom: 16px;
 }
