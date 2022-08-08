@@ -156,16 +156,18 @@ a {
     line-height: 125%;
     color: #BF7506;
     margin: 0 0 32px 0;
+    text-align: center;
 }
 
 .cards {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .card {
     max-width: 400px;
+    justify-content: center;
 }
 
 .card-wrapper {
@@ -277,7 +279,7 @@ a {
 .input {
     border: 3px solid #E0DEDC;
     border-radius: 4px;
-    width: 435px;
+    width: 100%;
     height: 56px;
 }
 
@@ -328,10 +330,50 @@ a {
 /******************************/
 /*MEDIA ZAPROS*/
 /******************************/
+@media (max-width:1024px) {
+    .container {
+        max-width: 760px;
+
+    }
+
+    .card-image {
+        max-width: 350px;
+    }
+}
+
+@media (max-width:790px) {
+    .container {
+        max-width: 576px;
+    }
+
+    .hand {
+        display: none;
+    }
+
+    .card-image {
+        max-width: 100%;
+    }
+
+    .developer,
+    .cards {
+        flex-direction: column;
+    }
+
+    .developer-photo {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 30px;
+
+    }
+}
 
 @media (max-width:600px) {
+    html {
+        font-size: 14px;
+    }
+
     .container {
-        max-width: 90%;
+        width: 90%;
     }
 
     .navbar,
@@ -349,4 +391,23 @@ a {
         margin-left: 0;
     }
 
+    .card {
+        max-width: 100%;
+    }
+
+    .nav-list {
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width:480px) {
+    .form-container {
+        max-width: 90%;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        margin-top: 10px;
+    }
 }
