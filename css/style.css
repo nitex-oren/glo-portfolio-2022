@@ -1,6 +1,16 @@
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
+    color: #211B12;
+}
+
+a {
+    color: #211B12;
+    text-decoration: none;
 }
 
 .container {
@@ -9,29 +19,60 @@ body {
     margin: 0 auto;
 }
 
+.h2-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 125%;
+}
+
+.h2-title--orange {
+    color: #BF7506;
+}
+
+.h3-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 125%;
+}
+
+.h3-title--orange {
+    color: #BF7506;
+}
+
+.text-block {
+    margin: 16px 0;
+    line-height: 150%;
+}
+
+
 /* NAVBAR */
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 44px;
+    padding-top: 40px;
 }
 
 .nav-list {
     display: flex;
     list-style: none;
+    margin: 0;
 }
 
 .nav-link {
-    font-size: 16px;
     line-height: 150%;
     color: #BF7506;
-    text-decoration: none;
+
+}
+
+.nav-item:not(:last-child) {
     padding-right: 24px;
 }
 
-.nav-link.active {
+.nav-link:hover {
     font-weight: 700;
 }
 
@@ -39,6 +80,7 @@ body {
 
 .header {
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: 74px 0;
 }
@@ -53,23 +95,22 @@ body {
 
 .header-strong {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 125%;
-    color: #211B12;
+    /* display: block; */
+    text-align: center;
 }
 
 .header-heading {
-    max-width: 510px;
+    /* max-width: 510px; */
     margin: 8px 0 24px 0;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 135%;
-    color: #211B12;
+
 }
 
-.header-primary {
-    color: #BF7506;
-}
+
 
 .header-links {
     display: flex;
@@ -94,8 +135,6 @@ body {
     align-items: center;
     padding: 7px 8px;
     border-bottom: 2px solid #BF7506;
-    text-decoration: none;
-    color: #211B12;
     font-weight: 700;
     line-height: 150%;
 }
@@ -106,7 +145,6 @@ body {
 
 .cv-text {
     font-weight: 700;
-    font-size: 16px;
     line-height: 150%;
 }
 
@@ -114,7 +152,7 @@ body {
 
 .portfolio-header {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 125%;
     color: #BF7506;
     margin: 0 0 32px 0;
@@ -123,6 +161,7 @@ body {
 .cards {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -133,41 +172,26 @@ body {
     padding: 16px;
 }
 
-.card-title {
-    margin: 0 0 8px 0;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 135%;
-    color: #BF7506;
-}
-
 .tags {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: 0;
-    padding: 0;
+    padding: 10px 0 0;
 }
 
 .tag-link {
     padding: 4px 8px;
-    text-decoration: none;
-    font-size: 12px;
-
-    color: #211B12;
+    font-size: 0.75rem;
+    display: inline-block;
     background: #FFFFFF;
     border: 1px solid #DD9C3C;
     border-radius: 4px;
     margin-right: 4px;
+    margin-bottom: 4px;
 }
 
-.card-text {
-    margin: 0;
-    padding: 17px 0;
-    font-weight: 400;
-    font-size: 16px;
-    color: #211B12;
-}
 
 .card-buttons {
     display: flex;
@@ -179,10 +203,7 @@ body {
     display: flex;
     align-items: center;
     padding: 7px 8px;
-    text-decoration: none;
     font-weight: 700;
-    font-size: 16px;
-    color: #211B12;
     border-bottom: 2px solid #BF7506;
     margin-right: 25px;
 }
@@ -204,8 +225,8 @@ body {
 .developer-photo {
     border-radius: 20px;
     outline: 1px solid #ccc;
-    width: 360px;
-    height: 440px;
+    max-width: 360px;
+    max-height: 440px;
     flex-shrink: 0;
     object-fit: cover;
 }
@@ -215,31 +236,14 @@ body {
 }
 
 .developer-hello {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 135%;
-    color: #211B12;
-}
-
-.developer-title {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 125%;
-    color: #BF7506;
-    margin: 4px 0 16px;
-
-}
-
-.developer-text {
-    font-size: 16px;
-    line-height: 150%;
-    color: #211B12;
+    padding-bottom: 4px;
 }
 
 .motto {
     font-family: 'Helvetica', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 150%;
     color: #DD9C3C;
     margin: 16px 0;
@@ -249,15 +253,9 @@ body {
     max-width: 200px;
 }
 
-.skills-title {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 135%;
-    color: #211B12;
-}
-
 .feedback {
     padding: 80px 0 160px;
+    position: relative;
 }
 
 .input-group {
@@ -270,10 +268,8 @@ body {
     position: absolute;
     top: 0;
     left: 16px;
-
     color: #83807C;
     line-height: 150%;
-    font-size: 16px;
     padding: 0 8px;
     background: white;
 }
@@ -297,18 +293,14 @@ body {
 
 .submit-button {
     display: flex;
-
     align-items: center;
-    /* padding: 7px 8px; */
     border: none;
     border-bottom: 2px solid #BF7506;
     text-decoration: none;
-    color: #211B12;
     background-color: white;
     cursor: pointer;
     font-weight: 700;
     line-height: 150%;
-
     outline: none;
 }
 
@@ -324,4 +316,37 @@ body {
     text-align: center;
     color: #83807C;
     padding-bottom: 16px;
+}
+
+.hand {
+    position: absolute;
+    right: 10%;
+    top: 25%;
+    width: 25%;
+}
+
+/******************************/
+/*MEDIA ZAPROS*/
+/******************************/
+
+@media (max-width:600px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .navbar,
+    .header,
+    .header-links,
+    .cards {
+        flex-direction: column;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .cv-download {
+        margin-left: 0;
+    }
+
 }
